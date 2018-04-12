@@ -21,6 +21,7 @@ Road Map
 
 - [2018-04-02] Config & Setup CI Framework
 - [2018-04-10] First draft for DB Structure
+- [2018-04-12] Choosed "Admin Wrap Lite" for the first template 
 
 **************************
 Features
