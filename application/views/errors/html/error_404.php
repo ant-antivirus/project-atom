@@ -59,7 +59,6 @@ p {
 	<div id="container">
 		<h1><?php echo $heading; ?></h1>
 		<?php echo $message; ?>
-		<p><a href="<?php echo base_url();?>">Back to Home</a></p>
 	</div>
 </body>
 </html>
