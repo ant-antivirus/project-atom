@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class dashboard extends CI_Controller {
-	var $title_key = "title_dashboard";
-	var $controller_key = "dashboard";
+class profile extends CI_Controller {
+	var $title_key = "title_profile";
+	var $controller_key = "profile";
 
 	public function index() {
 		$data = [

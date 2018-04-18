@@ -29,5 +29,16 @@ class MY_Loader extends CI_Loader {
 		$this->view($view, $data);
 		$this->view($this->variables->template.'/footer', $data);
 	}
+
+	public function get_sidebar($current) {
+		$result = [
+			['title' => _('title_dashboard'), 'url' => base_url('dashboard'), 'icon' => 'fa fa-tachometer', 'actived' => false],
+			['title' => _('title_profile'), 'url' => base_url('profile'), 'icon' => 'fa fa-user-circle-o', 'actived' => false],
+			['title' => _('title_company'), 'url' => base_url('company'), 'icon' => 'fa fa-building-o', 'actived' => false],
+		];
+
+		return $result;
+	}
+
 }
 ?>
