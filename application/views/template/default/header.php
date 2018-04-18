@@ -48,7 +48,7 @@
         <nav class="navbar top-navbar navbar-expand-md navbar-light">
             <!-- Logo -->
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="<?php echo base_url();?>">
                     <!-- Logo icon --><b>
                         <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                         <!-- Dark Logo icon -->
@@ -57,11 +57,12 @@
                         <img src="<?php echo base_url($template->assets);?>/assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
                     </b>
                     <!--End Logo icon -->
-                    <!-- Logo text --><span>
-                     <!-- dark Logo text -->
-                     <img src="<?php echo base_url($template->assets);?>/assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                     <!-- Light Logo text -->    
-                     <img src="<?php echo base_url($template->assets);?>/assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                    <!-- Logo text -->
+					<span>
+						 <!-- dark Logo text -->
+						 <div class="d-inline"><?php echo strtoupper(_('system_name'));?></div>
+					</span>
+				</a>
             </div>
             <!-- End Logo -->
             <div class="navbar-collapse">
@@ -73,7 +74,10 @@
                 <ul class="navbar-nav my-lg-0">
                     <!-- Profile -->
                     <li class="nav-item dropdown u-pro">
-                        <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="<?php echo base_url($template->assets);?>/assets/images/users/1.jpg" alt="user" class="" /> <span class="hidden-md-down">Mark Sanders &nbsp;</span> </a>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark profile-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="<?php echo base_url($template->assets);?>/assets/images/users/panutat.jpg" alt="user" class="" />
+							<span class="hidden-md-down">Panutat Latplee</span>
+						</a>
                     </li>
                 </ul>
             </div>
